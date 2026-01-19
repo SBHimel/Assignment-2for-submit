@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* navbar design */
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* 1. Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* padding + width যোগে overflow হবে না */
+    /* Responsive design বানানোর সময় সব element এ box-sizing: border-box; দিলে padding + border add হলেও element width control এ থাকে। */
+}
+
+/* Header */
+header {
+    background-color: #150d31fb;
+    margin-top: 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%; 
+}
+
+
+.navlink {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-items {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+.nav-btn {
+    width: 135px;
+    height: 44px;
+    border-radius: 30px;
+    background: linear-gradient(30deg, #F7E93F 15%, #FB09B4, #9100F8);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgb(255,0,234);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    cursor: pointer;
+}
+.line {
+    border: none;
+    height: 2px;
+    background-color: #7c63b8;
+    margin-top: 0; 
+}
+.mobile-icon{
+    display: none;
+}
+/*  First section design */
+
+.Abba {
+    position: relative;
+    background-image: url('B13-A02-TechWave/assets/hero-bg.png');
+    height: 674px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.micro {
+    position: absolute;   
+    top: 36%;           
+    left: 50%;           
+    transform: translate(-50%, -50%); /* perfectly center overlay */
+    
+    width: 350px;      
+    height: 350px;
+    background-image: url('B13-A02-TechWave/assets/hero-circle.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+      /* Background image পুরোপুরি দেখা যাবে, কিন্তু কখনোই কাটা (crop) হবে না। */
+    background-position: center;
+}
+.mic-img{
+    margin-left: 34%;
+    margin-top: 23%;
+}
+
+/* Tex design */
+.container{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 28rem;
+}
+
+.new{
+    background-color: #00FF88;
+    width: 5rem;
+    height: 2.3rem;
+    border-radius: 1.25rem;
+    color: black;
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15rem;
+    margin-left: 15.6rem;
+    box-shadow: -5px 10px 10px rgba(117, 42, 238, 0.959);
+
+}
+.tittle{
+    font-weight: 800;
+    font-size: 3.8rem;
+}
+.description{
+    /* margin-top: -28px; */
+    margin-bottom: 0.8rem;
+}
+.first-btn{
+    width: 11.8rem;
+    align-items: center;
+    justify-content: center;
+}
+.emni{
+    visibility: hidden;
+}
+.second-btn{
+    width: 9.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.75rem;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid #00FF88;
+    color: #00FF88;
+    font-weight: 600;
+    background: transparent;
+    /* background remove korte eta use hoy */
+}
+.two-btn{
+    display: flex;
+    gap: 0.6rem;
+}
+.break{
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+     .mobile-icon, .break {
+        display: block; /* mobile এ show */
+    }
+    .navlink, .mobile-hide {
+        display: none; /* mobile menu hide */
+    }
+
+}
