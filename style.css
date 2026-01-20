@@ -30,7 +30,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 20px 8%;
 }
 
 
@@ -48,6 +48,7 @@ header {
     color: #FFFFFF;
     font-weight: 500;
     font-size: 16px;
+    opacity: 90%;
 }
 
 
@@ -64,7 +65,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 button {
@@ -73,7 +74,7 @@ button {
 
 .line {
     border: none;
-    height: 2px;
+    height: 1px;
     background-color: #7c63b8;
     margin-top: 0;
 }
@@ -87,7 +88,7 @@ button {
 .Abba {
     position: relative;
     background-image: url('B13-A02-TechWave/assets/hero-bg.png');
-    height: 674px;
+    height: 42.125rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -114,13 +115,15 @@ button {
     margin-top: 23%;
     animation: ghuro 2s linear 2;
 }
+
 @keyframes ghuro {
-  from {
-     transform: rotate(0deg);
-  }
-  to {
-     transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* Tex design */
@@ -146,6 +149,7 @@ button {
     margin-top: -15rem;
     margin-left: 15.6rem;
     box-shadow: -5px 10px 10px rgba(117, 42, 238, 0.959);
+    font-weight: 600;
 
 }
 
@@ -157,6 +161,8 @@ button {
 .description {
     /* margin-top: -28px; */
     margin-bottom: 0.8rem;
+    opacity: 80%;
+
 }
 
 .first-btn {
@@ -184,8 +190,9 @@ button {
     /* background remove korte eta use hoy */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
-.second-btn:hover{
-    background-color:#9100F8;
+
+.second-btn:hover {
+    background-color: #9100F8;
     border: 1px solid white;
     color: white;
 }
@@ -197,6 +204,130 @@ button {
 
 .break {
     display: none;
+}
+
+/* section two design */
+.section-two {
+    background-color: #130b2cfb;
+}
+
+.main-section {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-tittle {
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+.main-description {
+    opacity: 80%;
+}
+
+.ektu {
+    width: 80vw;
+    margin: auto;
+}
+
+/* four div ba car design */
+.four-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.same {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    padding-bottom: 5rem;
+}
+
+.same-title {
+    color: #00FF88;
+    font-weight: 900;
+    font-size: 2.8rem;
+}
+
+.descript {
+    color: white;
+    word-spacing: 3px;
+}
+
+/* section Three  five div ba card*/
+
+.section-three {
+    background-color: #230E3D;
+    color: #FFFFFF;
+    padding: 20px 8%;
+}
+
+.five-card-title {
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.for-padding {
+    /* border: 2px solid black; */
+    padding: 3rem 1.5rem;
+    border-radius: 2.5rem;
+    background-color: #351165;
+}
+
+.five-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1.3rem;
+}
+
+.card1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    ;
+}
+
+.card2 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.card3 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.card4 {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+.card5 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.first-div-center {
+    padding-top: 4rem;
+}
+
+.five-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.five-descript {
+    opacity: 70%;
 }
 
 @media screen and (max-width: 576px) {
@@ -213,6 +344,62 @@ button {
         /* mobile menu hide */
     }
 
-    /* header section  */
+    /* Four div */
+    .four-div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-auto-rows: auto;  */
+        gap: 0.3rem;
+    }
+
+    #br-close {
+        display: none;
+
+    }
+
+
+    /* yfyutfjuyg */
+    .Abba {
+        background-image: url('B13-A02-TechWave/assets/Image.png');
+        height: 554px;
+    }
+     .micro {
+        width: 200px;
+        height: 200px;
+        top: 30%;
+    }
+    .mic-img {
+        margin-left: 34%;
+        margin-top: 23%;
+        width: 4rem;
+    }
+    .tittle {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+    .container {
+        padding-top: 20rem; 
+    }
+    .new{
+        margin-top: -8.5rem;
+        margin-left: 8.8rem;
+        
+    }
     
+    /* jguygu */
+
+    /* section Three  five div ba card*/
+    .five-div {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+    .five-div > div {
+    grid-column: 1 / 2;
+    grid-row: auto; /* প্রতিটা div নিজের auto row নেবে */
+  }
+
 }
