@@ -14,7 +14,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* padding + width যোগে overflow হবে না */
+    box-sizing: border-box;
+    /* padding + width যোগে overflow হবে না */
     /* Responsive design বানানোর সময় সব element এ box-sizing: border-box; দিলে padding + border add হলেও element width control এ থাকে। */
 }
 
@@ -29,7 +30,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%; 
+    padding: 20px 5%;
 }
 
 
@@ -59,23 +60,28 @@ header {
     color: white;
     font-size: 16px;
     font-weight: 600;
-    box-shadow: 0 4px 15px rgb(255,0,234);
+    box-shadow: 0 4px 15px rgb(255, 0, 234);
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
-button{
+
+button {
     cursor: pointer;
 }
+
 .line {
     border: none;
     height: 2px;
     background-color: #7c63b8;
-    margin-top: 0; 
+    margin-top: 0;
 }
-.mobile-icon{
+
+.mobile-icon {
     display: none;
 }
+
 /*  First section design */
 
 .Abba {
@@ -88,42 +94,53 @@ button{
 }
 
 .micro {
-    position: absolute;   
-    top: 36%;           
-    left: 50%;           
-    transform: translate(-50%, -50%); /* perfectly center overlay */
-    
-    width: 350px;      
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* perfectly center overlay */
+
+    width: 350px;
     height: 350px;
     background-image: url('B13-A02-TechWave/assets/hero-circle.png');
     background-repeat: no-repeat;
     background-size: contain;
-      /* Background image পুরোপুরি দেখা যাবে, কিন্তু কখনোই কাটা (crop) হবে না। */
+    /* Background image পুরোপুরি দেখা যাবে, কিন্তু কখনোই কাটা (crop) হবে না। */
     background-position: center;
 }
-.mic-img{
+
+.mic-img {
     margin-left: 34%;
     margin-top: 23%;
+    animation: ghuro 2s linear 2;
+}
+@keyframes ghuro {
+  from {
+     transform: rotate(0deg);
+  }
+  to {
+     transform: rotate(360deg);
+  }
 }
 
 /* Tex design */
-.container{
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding-top: 28rem;
+.container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 28rem;
 }
 
-.new{
+.new {
     background-color: #00FF88;
     width: 5rem;
     height: 2.3rem;
     border-radius: 1.25rem;
     color: black;
     margin: 0 auto;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: -15rem;
@@ -131,23 +148,28 @@ button{
     box-shadow: -5px 10px 10px rgba(117, 42, 238, 0.959);
 
 }
-.tittle{
+
+.tittle {
     font-weight: 800;
     font-size: 3.8rem;
 }
-.description{
+
+.description {
     /* margin-top: -28px; */
     margin-bottom: 0.8rem;
 }
-.first-btn{
+
+.first-btn {
     width: 11.8rem;
     align-items: center;
     justify-content: center;
 }
-.emni{
+
+.emni {
     visibility: hidden;
 }
-.second-btn{
+
+.second-btn {
     width: 9.1rem;
     display: flex;
     align-items: center;
@@ -160,21 +182,37 @@ button{
     font-weight: 600;
     background: transparent;
     /* background remove korte eta use hoy */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
-.two-btn{
+.second-btn:hover{
+    background-color:#9100F8;
+    border: 1px solid white;
+    color: white;
+}
+
+.two-btn {
     display: flex;
     gap: 0.6rem;
 }
-.break{
+
+.break {
     display: none;
 }
 
 @media screen and (max-width: 576px) {
-     .mobile-icon, .break {
-        display: block; /* mobile এ show */
-    }
-    .navlink, .mobile-hide {
-        display: none; /* mobile menu hide */
+
+    .mobile-icon,
+    .break {
+        display: block;
+        /* mobile এ show */
     }
 
+    .navlink,
+    .mobile-hide {
+        display: none;
+        /* mobile menu hide */
+    }
+
+    /* header section  */
+    
 }
