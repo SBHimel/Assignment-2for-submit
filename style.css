@@ -332,7 +332,9 @@ button {
 }
 
 /* section four 3 div design */
-.four, .five {
+.four,
+.five,
+.footer {
     background-color: #150d31fb;
     color: #FFFFFF;
 }
@@ -347,9 +349,9 @@ button {
     gap: 1.3rem;
 
     max-width: 1200px;
-    margin: 0 auto;      
+    margin: 0 auto;
 
-    padding-left: 2rem;  
+    padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 3.5rem;
 }
@@ -358,26 +360,29 @@ button {
 .fetured-div {
     background-color: #351165;
     border-radius: 20px;
-    width: 100%;           
-    max-width: 23rem;      
+    width: 100%;
+    max-width: 23rem;
     height: 27.5rem;
 }
-.youtube{
+
+.youtube {
     width: 23rem;
     height: 13.3rem;
     border-radius: 18px 18px 0 0;
 
 }
-.deep{
+
+.deep {
     padding: 1.4rem;
 }
 
 /* section-five */
-.five{
+.five {
     padding: 1.4rem 8%;
     padding-bottom: 3.5rem;
 }
-.five-section{
+
+.five-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -386,13 +391,63 @@ button {
     padding: 40px;
     border-radius: 20px;
 }
-.alex{
+
+.alex {
     font-weight: 600;
     font-size: 32px;
 }
-.alex-descript{
+
+.alex-descript,
+.footer-desc {
     opacity: 70%;
 }
+
+/* Footer */
+.footer {
+    background-image: url("B13-A02-TechWave/assets/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    min-height: 25rem;
+    width: 100%;
+    padding-top: 0.4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-title img {
+    margin-bottom: 1rem;
+}
+
+.title-image {
+    width: 24rem;
+}
+
+
+.footer-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.4rem;
+}
+
+.copy {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: white;
+    word-spacing: 3px;
+}
+.footer-desc, .copy{
+    opacity: 80%;
+}
+
+
 
 @media screen and (max-width: 576px) {
 
@@ -483,8 +538,76 @@ button {
     }
 
     /* Section Five */
-    .five-section{
+    .five-section {
         flex-direction: column;
         text-align: center;
+    }
+
+    /* Footer section */
+   .footer {
+        min-height: 12.7rem;
+        padding: 2.2rem 1.2rem;
+    }
+
+    .title-image {
+        max-width: 12rem;
+    }
+
+    .footer-icon {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        justify-content: center;
+        gap: 0.05rem;
+        
+    }
+    .dekhi{
+        padding-left: 35%;
+    }
+    .hello{
+        padding-left: 21%;
+    }
+    
+}
+
+/* medium device */
+@media screen and (min-width: 577px) and (max-width: 992px){
+    .featured-section {
+        grid-template-columns: repeat(2,2fr);
+        justify-items: center;
+    }
+
+    .featured-section .fetured-div:nth-child(3) {
+        grid-column: 1 / -1;
+        /* পুরো row জুড়ে (start → end) */
+
+        justify-self: center;
+        /* ব্লকটি মাঝখানে থাকবে */
+    }
+
+
+
+    .footer {
+        min-height: 12.7rem;
+        padding: 2.2rem 1.2rem;
+    }
+
+    .title-image {
+        max-width: 16rem;
+    }
+
+    .footer-icon {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        justify-content: center;
+        gap: 0.05rem;
+        
+    }
+    .dekhi{
+        padding-left: 35%;
+    }
+    .hello{
+        padding-left: 21%;
     }
 }
