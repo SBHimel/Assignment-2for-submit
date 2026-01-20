@@ -267,7 +267,8 @@ button {
 .section-three {
     background-color: #230E3D;
     color: #FFFFFF;
-    padding: 20px 8%;
+    padding: 1.4rem 8%;
+    padding-bottom: 3.5rem;
 }
 
 .five-card-title {
@@ -330,6 +331,47 @@ button {
     opacity: 70%;
 }
 
+/* section four 3 div design */
+.four {
+    background-color: #150d31fb;
+    color: #FFFFFF;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.featured-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.3rem;
+
+    max-width: 1200px;
+    margin: 0 auto;      
+
+    padding-left: 2rem;  
+    padding-right: 2rem;
+    padding-bottom: 3.5rem;
+}
+
+/* Card */
+.fetured-div {
+    background-color: #351165;
+    border-radius: 20px;
+    width: 100%;           
+    max-width: 23rem;      
+    height: 27.5rem;
+}
+.youtube{
+    width: 23rem;
+    height: 13.3rem;
+    border-radius: 18px 18px 0 0;
+
+}
+.deep{
+    padding: 1.4rem;
+}
+
 @media screen and (max-width: 576px) {
 
     .mobile-icon,
@@ -363,16 +405,19 @@ button {
         background-image: url('B13-A02-TechWave/assets/Image.png');
         height: 554px;
     }
-     .micro {
+
+    .micro {
         width: 200px;
         height: 200px;
         top: 30%;
     }
+
     .mic-img {
         margin-left: 34%;
         margin-top: 23%;
         width: 4rem;
     }
+
     .tittle {
         font-size: 2.5rem;
     }
@@ -380,15 +425,17 @@ button {
     .description {
         font-size: 1rem;
     }
+
     .container {
-        padding-top: 20rem; 
+        padding-top: 20rem;
     }
-    .new{
+
+    .new {
         margin-top: -8.5rem;
         margin-left: 8.8rem;
-        
+
     }
-    
+
     /* jguygu */
 
     /* section Three  five div ba card*/
@@ -397,9 +444,19 @@ button {
         grid-template-rows: auto;
         gap: 10px;
     }
-    .five-div > div {
-    grid-column: 1 / 2;
-    grid-row: auto; /* প্রতিটা div নিজের auto row নেবে */
-  }
 
+    .five-div>div {
+        grid-column: 1 / 2;
+        grid-row: auto;
+        /* প্রতিটা div নিজের auto row নেবে */
+    }
+
+
+    /* section four 3 div design */
+    .featured-section {
+        grid-template-columns: 1fr;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        justify-items: center;
+    }
 }
