@@ -516,6 +516,10 @@ button {
     /* jguygu */
 
     /* section Three  five div ba card*/
+    .five-card-title{
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
     .five-div {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
